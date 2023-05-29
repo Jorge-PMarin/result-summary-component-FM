@@ -46,7 +46,11 @@ body {
 }
 
 .summary-circle {
-  background: linear-gradient(to bottom, var(--violet-blue), hsla(241, 81%, 54%, 0));
+  background: linear-gradient(
+    to bottom,
+    var(--violet-blue),
+    hsla(241, 81%, 54%, 0)
+  );
   width: 14rem;
   height: 14rem;
   border-radius: 10rem;
@@ -65,28 +69,121 @@ body {
 }
 
 .summary-total {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: hsla(241, 100%, 89%, 0.438);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsla(241, 100%, 89%, 0.438);
 }
 
 .summary-comment {
-    font-size: 2.4rem;
-    font-weight: 500;
-    color: var(--white);
-    margin-bottom: 1.2rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 1.2rem;
 }
 
 .summary-comparison {
-    font-size: 1.6rem;
-    text-align: center;
-    color: hsla(241, 100%, 89%, 0.836);
+  font-size: 1.6rem;
+  text-align: center;
+  color: hsla(241, 100%, 89%, 0.836);
+}
+
+.summary-right {
+  padding: 3rem;
+}
+
+.summary-right-heading {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--dark-gray-blue);
+  margin-bottom: 2.5rem;
+}
+
+.summary-results {
+  margin-bottom: 2.5rem;
+}
+
+.summary-result {
+  padding: 1.8rem 1.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.summary-result:not(:last-child) {
+  margin-bottom: 1.8rem;
+}
+
+.summary-result-text {
+  margin-left: 1rem;
+}
+
+.summary-result-score {
+  margin-left: auto;
+  margin-right: 0.8rem;
+  color: var(--dark-gray-blue);
+}
+
+.summary-result-total {
+  color: hsla(224, 30%, 27%, 0.466);
+}
+
+.summary-reaction {
+  background-color: hsla(0, 100%, 67%, 0.123);
+}
+
+.summary-reaction-text {
+  color: hsl(0, 100%, 67%);
+}
+
+.summary-memory {
+  background-color: hsl(39, 100%, 56%, 0.123);
+}
+
+.summary-memory-text {
+  color: hsl(39, 100%, 56%);
+}
+
+.summary-verbal {
+  background-color: hsl(166, 100%, 37%, 0.123);
+}
+
+.summary-verbal-text {
+  color: hsl(166, 100%, 37%);
+}
+
+.summary-visual {
+  background-color: hsl(234, 85%, 45%, 0.123);
+}
+
+.summary-visual-text {
+  color: hsl(234, 85%, 45%);
+}
+
+.summary-btn {
+  width: 100%;
+  padding: 1.6rem;
+  border-radius: 10rem;
+  border: none;
+  background-color: var(--dark-gray-blue);
+  font-weight: 700;
+  color: var(--white);
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin: 4rem 0rem;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 500px) {
+  main {
+    max-width: 52rem;
+    margin: 0 auto;
+  }
 }
