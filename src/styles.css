@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+  /*Primary*/
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+  /*Neutral*/
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+  /*Gradients*/
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0);
+
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.summary-left {
+  background: linear-gradient(
+    to bottom,
+    var(--light-slate-blue),
+    var(--light-royal-blue)
+  );
+  color: var(--pale-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+  border-radius: 0 0 3rem 3rem;
+}
+
+.summary-left-heading {
+  font-size: 1.8rem;
+  color: var(--light-lavender);
+  margin-bottom: 2.5rem;
+}
+
+.summary-circle {
+  background: linear-gradient(to bottom, var(--violet-blue), hsla(241, 81%, 54%, 0));
+  width: 14rem;
+  height: 14rem;
+  border-radius: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.summary-score {
+  display: block;
+  font-size: 5.5rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.summary-total {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: hsla(241, 100%, 89%, 0.438);
+}
+
+.summary-comment {
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 1.2rem;
+}
+
+.summary-comparison {
+    font-size: 1.6rem;
+    text-align: center;
+    color: hsla(241, 100%, 89%, 0.836);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
